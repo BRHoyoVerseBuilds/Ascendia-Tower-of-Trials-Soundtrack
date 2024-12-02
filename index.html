@@ -23,6 +23,26 @@
             height: 100vh;
             text-align: center;
             background-color: rgba(44, 24, 16, 0.8);
+            position: relative;
+        }
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #8b4513;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+        #backButton:hover {
+            background-color: #a0522d;
+            transform: translateY(-3px);
         }
         #logo {
             max-width: 400px;
@@ -144,6 +164,7 @@
 <body>
 
 <div id="playerContainer">
+    <a href="https://brhoyoversebuilds.github.io/Ascendia-Tower-of-Trials/" id="backButton">Back</a>
     <img id="logo" src="https://github.com/BRHoyoVerseBuilds/Ascendia-Tower-of-Trials/blob/main/platformer/logo.png?raw=true" alt="Logo">
     <div id="soundtrack-text">SOUNDTRACK</div>
     <div id="player">
